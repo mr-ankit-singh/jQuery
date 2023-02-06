@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>mouseleave Event</title>
+    <style>
+        button{
+            margin-left: 200px;
+        }
+        div{
+            background-color: aqua;
+            padding:10px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("div").mouseleave(function(){
+                alert("This is mouseleave element.U r leaving")
+            })
+        });
+    </script>
+</head>
+<body>
+    <button><div>We are learning Mouse Event</div></button>
+</body>
+</html>

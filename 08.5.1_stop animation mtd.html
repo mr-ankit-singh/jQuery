@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery stop Animation method</title>
+    <style>
+        #d{
+            height:350px;
+            width:400px;
+            align-items: center;
+            display:block;
+            justify-content: center;
+            border:2px solid blue;
+            text-align: center;
+            font-size: 40px;
+        }
+        #div1{
+            font-size: 40px;
+            margin-top: 20px;
+            border:2px solid red;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+        #div2{
+            border:2px solid red;
+            background-color: rgb(199, 211, 27);
+            display:none;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#div1").click(function(){
+                $("#div2").slideToggle(5000);
+            });
+            $("button").click(function(){
+                $("#div2").stop();
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h1>slideDown() , slideUp() and slideToggle()</h1>
+    <div id="d">
+        <div id="div1">slide Me</div>
+        <div id="div2">
+            <div>one</div>
+            <div>two</div>
+            <div>three</div>
+            <div>four</div>
+            <div>five</div>
+        </div>
+    </div>
+    <button>Stop</button>
+    
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Empty Method</title>
+    <style>
+        div{
+            border:2px solid red;
+            background: springgreen;
+            height:200px;
+            width:200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("div").empty()
+            });
+            
+        });
+    </script>
+    
+</head>
+
+<body>
+   <h2>Empty method</h2>
+   <p>empty():Remove all content ans child nodes from selected elements</p>
+   
+   <div>
+        <p id="p1">This is First Paragraph</p>
+        <p id ="p2">This is second Paragraph</p>  
+        <p id="p3">This is third paragraph</p>     
+    </div>
+    <br>
+    <button id="b1">Empty</button>
+    
+</body>
+
+</html>

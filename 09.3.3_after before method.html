@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Add Element Method</title>
+    <style>
+        
+    </style>
+    <script>
+      $(document).ready(function(){
+          $("#b1").click(function(){
+            $("#p1").before("Before")
+          })
+          $("#b2").click(function(){
+            $("#p2").after("After")
+          })
+      })
+    </script>
+</head>
+
+<body>
+    <h1>JQuery Add Element</h1>
+    <p id="p1">This is First Paragraph</p>
+    <p id="p2">This is second Paragraph</p> 
+    <button id="b1">Before</button>      
+    <button id="b2">After</button>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Add Element Method</title>
+    <style>
+        
+    </style>
+    <script>
+      $(document).ready(function(){
+          $("#b1").click(function(){
+            $("ul").prepend("<li>List 4</li>")
+          })
+          $("#b2").click(function(){
+            $("p").prepend("This is new paragraph")
+          })
+      })
+    </script>
+</head>
+
+<body>
+    <h1>JQuery Add Element</h1>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+    <button id="b1">Add List</button>
+    <p>This is First Paragraph</p>
+    <p>This is second Paragraph</p>       
+    <button id="b2">Add Paragraph</button>
+
+</body>
+
+</html>

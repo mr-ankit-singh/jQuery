@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery noConflict() Method</title>
+    <style>
+     
+    </style>
+    <script>
+        /*
+        // mtd 1
+        $.noConflict()
+        jQuery(document).ready(function(){
+            jQuery("button").click(function(){
+                jQuery("p").toggle()
+            })
+        });
+        
+        // mtd 2
+        var j= $.noConflict()
+        j(document).ready(function(){
+            j("button").click(function(){
+                j("p").toggle()
+            })
+        });
+        */
+
+        // mtd 3
+        $.noConflict()
+        jQuery(document).ready(function($){
+            $("button").click(function(){
+                $("p").toggle()
+            })
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>jQuery noConflict() Method</h1>
+    <p>This is a paragraph</p>
+    <button>Click to toggle</button>
+   
+</body>
+
+</html>

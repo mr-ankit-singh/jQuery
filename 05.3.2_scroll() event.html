@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>scroll Event</title>
+    <style>
+       
+    </style>
+    <script>
+        let x=0;
+        $(document).ready(function(){
+            $("div").scroll(function(){
+                $("span").text(x+=1);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Scroll Event</h1>
+    <p>Try the scrollbar in the div</p>  
+    <div style="border:1px solid black;width:200px;height:100px;overflow:scroll;">   
+    If you cannot do great things, do small things in a great way.
+    Love has no age, no limit; and no death.l Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat mollitia odio consequatur nesciunt accusamus quam laborum aliquam! Non omnis nisi quibusdam saepe ipsa illo corporis veritatis, deserunt provident ut eos consectetur? Soluta quae iure molestias non corrupti nostrum maiores magnam quasi ducimus officia veritatis atque illum odio repellendus fugiat, doloremque laudantium ut amet fugit tempora ratione ex nihil vel. Ex magnam quasi ducimus ratione praesentium? Fugit laudantium ratione alias unde aperiam cumque, dignissimos error numquam expedita amet veritatis? Eaque, distinctio modi. Quo facilis consequatur maxime sed unde. Minima incidunt similique rerum magnam mollitia. Natus, pariatur. Odio soluta perspiciatis distinctio?</div>  
+    <p>Scrolled <span>0</span> times </p> 
+</body>
+
+</html>

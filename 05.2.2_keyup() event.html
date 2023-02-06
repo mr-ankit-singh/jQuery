@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>keyup() Event</title>
+    <style>
+        body {
+            margin-left: 30%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            
+            height: 100px;
+           
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('input').keyup(function(){
+                $(this).css('background' , 'yellow')
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Keyboard Events</h1>
+    <p>Action triggered using keyboard keys</p>
+    <ul>
+        <li>Keypress()</li>
+        <li>keydown()</li>
+        <li>keyup()</li>
+    </ul>
+    <div>
+        Enter your name :<br> <input>
+    </div>
+</body>
+
+</html>

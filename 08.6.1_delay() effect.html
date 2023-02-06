@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Delay Effect</title>
+    <style>
+        #d1 ,#d2,#d3{
+            background-color: red;
+            height:100px;
+            width:100px;
+            margin:20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#d1").slideUp("slow").delay(2000).slideDown()
+            })
+            $("#b2").click(function(){
+                $("#d2").fadeOut("slow").delay(2000).slideDown(2000)
+            })
+            $("#b3").click(function(){
+                $("#d3").animate({width:'200px'}).delay(2000).animate({height:'200px'})
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>delay() effect</h1>
+    <div id="d1"></div>
+    <button id="b1">Click Me</button>
+
+    <div id="d2"></div>
+    <button id="b2">Click Me</button>
+    
+    <div id="d3"></div>
+    <button id="b3">Click Me</button>
+    
+    
+</body>
+
+</html>

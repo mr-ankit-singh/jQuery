@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Animate Event</title>
+    <style>
+        div{
+            height: 100px;
+            width: 200px;
+            background: blue;
+            position: relative;
+            margin:10px;
+        }
+       
+    </style>
+    <script>
+       $(document).ready(function(){
+           $("div").click(function(){
+                var div = $("div");
+                div.animate({height: '300px', opacity: '0.4'}, "slow");
+                div.animate({width: '300px', opacity: '0.8'}, "slow");
+                div.animate({height: '100px', opacity: '0.4'}, "slow");
+                div.animate({width: '100px', opacity: '0.8'}, "slow");
+           })
+       });
+    </script>
+</head>
+
+<body>
+    <h1>Uses queue functionallity</h1>
+    <div>
+    
+    </div>
+    
+</body>
+</html>

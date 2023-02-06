@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery outerHeight outerWidth Method</title>
+    <style>
+     img{
+         height:300px;
+         width:500px;
+         margin:70px;
+         border:5px solid red;
+         padding:20px;
+     }
+    </style>
+    <script>
+        $(document).ready(function () {
+          $("button").click(function(){
+              var txt=""
+              //Return height width and padding
+              txt+="Width: "+$("img").outerWidth()+"</br>";
+              txt+="height: "+$("img").outerHeight()+"</br>";
+              //Return height width padding and margin
+              txt+="Width: "+$("img").outerWidth(true)+"</br>";
+              txt+="height: "+$("img").outerHeight(true)+"</br>";
+              $("div").html(txt)
+          })
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <h1>jQuery outerHeight and outerWidth Method</h1>
+    <div></div>
+    <img src="website.jpg"><br>
+    <button>click</button>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Display Event</title>
+    <style>
+       
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("table").hide();
+            })
+            $("#b2").click(function(){
+                $("table").show();
+            })
+            $("#b3").click(function(){
+                $("table").toggle();
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h2>hide() , show() and toggle() effects</h2>
+    <table>
+        <tr>
+            <td>Home</td>
+        </tr>
+        <tr>
+            <td>Menu</td>
+        </tr>
+        <tr>
+            <td>Gallery</td>
+        </tr>
+        <tr>
+            <td>About</td>
+        </tr>
+    </table>
+    <button id="b1">Hide</button>
+    <button id="b2">Show</button>
+    <button id="b3">Toggle</button>
+</body>
+
+</html>

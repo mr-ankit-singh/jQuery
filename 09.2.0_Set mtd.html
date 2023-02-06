@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Html Set</title>
+    <style>
+       #new{
+           color:yellow;
+       }
+    </style>
+    <script>
+       $(document).ready(function(){
+           $("button").click(function(){
+               $("#p2").text("Thanku")//it chnage only text
+               $("#p2").html("<u>Thank you</u>")//it change text as well as style
+               $("#p1").attr({"id":"new" , "title":"form"});//element ke attribut ko change krte hai
+           });
+           $("#i1").val("Ankit singh")//esse input field me default value set ho jata hai
+           $("#i2").val("Btech")
+           
+       });
+    </script>
+</head>
+
+<body>
+    <h1><u>jquery set </u></h1>
+    <div id="div1">
+        <p id="p1">Registration Form</p>
+        <p id="p2">Please Submit the below form</p>
+        <div id="d2">
+            <br>
+            <table>
+                <tr>
+                    <td id="t1">Name:</td>
+                    <td> <input type="text" id="i1"></td>
+                </tr>
+                <tr>
+                    <td >Class:</td>
+                    <td> <input type="text" id="i2"></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>
+                        <select id="i3">
+                            <option>Below 18</option>
+                            <option>Above 18 below 50</option>
+                            <option>Above 50</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Suggestion</td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td><button>Submit</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+   
+
+</body>
+
+</html>

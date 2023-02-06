@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Detach and remove Method</title>
+    <style>
+        div{
+            border:2px solid red;
+            background: springgreen;
+            height:200px;
+            width:200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).css('background','#ff4321')
+            })
+            $("#b1").click(function(){
+                $("body").append($("#p1").detach())
+            });
+            $("#b2").click(function(){
+                $("body").append($("#p2").remove())
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+   <h2>Remove and detach method</h2>
+   <div>
+    <p id="p1">This is First Paragraph</p>
+    <p id ="p2">This is second Paragraph</p>  
+    <p id="p3">This is third paragraph</p>     
+</div>
+<br>
+<button id="b1">Detach</button>
+<button id="b2">Remove</button>
+
+</body>
+
+</html>

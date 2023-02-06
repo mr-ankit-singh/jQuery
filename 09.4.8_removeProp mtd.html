@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>removeProp() Method</title>
+    <style>
+       .red{
+           color:red;
+       }
+       .border{
+           border:1px solid black;
+           height:100px;
+           width:200px;
+           background-color: blue;
+       }
+    </style>
+    <script>
+       $(document).click(function(){
+           $("#btn1").click(function(){
+               var x = $("div")
+               x.prop("color","green");
+               x.append("The value is: " + x.prop("color"))
+               x.removeProp("color")
+               x.append("The value is: " + x.prop("color"))
+           })
+       });
+    </script>
+
+</head>
+
+<body>
+   <h2>removeProp Method</h2>
+    <p class="red">Remove the property set the prop() method</p>
+    <div class="border"></div><br>
+    <button id="btn1">Let's Remove</button>
+</body>
+
+</html>

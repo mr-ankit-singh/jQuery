@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Detach Method</title>
+    <style>
+        div{
+            border:2px solid red;
+            background: springgreen;
+            height:200px;
+            width:200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            
+            $("#b2").click(function(){
+                $("div").detach()
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+   <h2>detach method</h2>
+   
+   <p>detach():remove selected elements</p>
+   <div>
+        <p id="p1">This is First Paragraph</p>
+        <p id ="p2">This is second Paragraph</p>  
+        <p id="p3">This is third paragraph</p>     
+    </div>
+    <br>
+    
+    <button id="b2">Detach</button>
+</body>
+
+</html>

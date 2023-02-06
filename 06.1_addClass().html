@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>addClass() Method</title>
+    <style>
+        .border {
+            border: 1px solid red;
+        }
+        .bg{
+            background-color: aqua;
+        }
+        .pair_0{color:red;}
+        .pair_1{font-size:40px;}
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // Add single class
+                //$("p").addClass("border")
+
+                //Add multiple class
+                //$("p").addClass("border bg")
+
+                // Add using Function
+                $("p").addClass(function(n){
+                    return "pair_"+n;
+                });
+
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <h1>addClass() Method</h1>
+    <p>Welcome Ankit singh</p>
+    <p>We are learning css classes</p><br>
+    <button id="btn">Add</button>
+</body>
+
+</html>

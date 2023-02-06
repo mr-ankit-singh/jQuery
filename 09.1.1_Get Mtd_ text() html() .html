@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Html Get</title>
+    <style>
+        h1 {
+            margin-left: 200px;
+        }
+
+        #d2 {
+            border: 1px solid red;
+            background-color: rgb(228, 228, 228);
+            padding: 10px;
+        }
+
+        #d1 {
+            padding: 30px;
+            border: 1px solid black;
+            padding-top: 0px;
+            background-color: #3f66af;
+        }
+
+        #b1,#b2 {
+            height: 30px;
+            width: 80px;
+            font-weight: 600;
+            background-color: rgb(41, 41, 233);
+            color: white;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+        /*    $("#b1").click(function () {
+                var text = $("#d1").text()
+                alert(text)
+            })
+            $("#b2").click(function () {
+                var text = $("#d2").text()
+                alert(text)
+            })*/
+            $("#b1").click(function () {
+                var text = $("#d1").html()
+                alert(text)
+            })
+            $("#b2").click(function () {
+                var text = $("#d2").html()
+                alert(text)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>jquery Get </h1>
+    <div id="d1">
+        <h4>Text</h4>
+        <div id="d2">
+            <p>Check out the text Below</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus laboriosam facilis
+                delectus nesciunt totam omnis exercitationem officiis sed id commodi. Neque fuga at maxime!</p>
+        </div>
+        <br>
+        <button id="b1">Click Me</button>
+        <button id="b2">Click Me</button>
+    </div>
+
+</body>
+
+</html>

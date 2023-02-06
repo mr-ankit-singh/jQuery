@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>restore content using Detach Method</title>
+    <style>
+        
+    </style>
+    <script>
+        var a;
+        $(document).ready(function(){
+          $("#b1").click(function(){
+              a = $("p").detach()
+          }) ;
+          $("#b2").click(function(){
+              $("body").prepend(a)
+          }) 
+        })
+    </script>
+    
+</head>
+
+<body>
+   <h2>How to restore content</h2>
+   <p> Hey R u learning jQuery</p>
+   <p>Have a nice day</p>
+   <button id="b1">Click</button>
+   <button id="b2">Restore</button>
+
+</body>
+
+</html>

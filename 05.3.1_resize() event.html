@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>resize() Event</title>
+    <style>
+       
+    </style>
+    <script>
+    var x = 0;  /*
+    $(document).ready(function(){  
+    $(window).resize(function(){  
+        $("span").text(x += 1);  
+    });  
+    $("button").click(function(){
+        $(window).resize();
+    })
+    });  */
+    $(window).resize(function(){
+        $("#p1").css('display',"inline").fadeOut(2000);
+    })
+    </script>
+</head>
+
+<body>
+    <h2>resize</h2>  
+    <p>-The resize event occur when the browser window change size</p>  
+    <p>Window resized <span>0</span> times.</p>  
+    <p>Try resizing your browser window.</p>
+    <p id="p1" style="display: none;">Your window is resized</p>
+    <button>Click me to trigged event</button>
+   
+</body>
+
+</html>

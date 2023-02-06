@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery Traversing - Siblings</title>
+    <style>
+     
+    </style>
+    <script>
+        $(document).ready(function(){
+        // On the basis of position
+        $("p").first().css("color","blue")
+        $("p").last().css("color","green")
+        $("p").eq(2).css("color","red")
+
+        //On the basis od careteria
+        $("p").filter(".p1").css("background","yellow")//unko select kerage jiski clss p hogi
+        $("p").not(".p1").css("background","gray")//jiski class hogi usko chhodh ker sabhi ko select keraga
+          
+        });
+    </script>
+
+
+</head>
+
+<body>
+    
+    <!--Tree structure-->
+    <div>
+        <h1>jQuery Traversing - Filtering</h1>
+        <p>The First Paragraph (Index: 0)</p>
+        <p class="p1">The Second Paragraph (Index: 1)</p>
+        <p>The Third Paragraph (Index: 2)</p>
+        <p class="p1">The Fourth Paragraph (Index: 3)</p>
+        <p>The Fifth Paragraph (Index: 4)</p>
+    </div>
+    
+</body>
+
+</html>

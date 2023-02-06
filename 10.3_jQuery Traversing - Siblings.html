@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery Traversing - Siblings</title>
+    <style>
+     div{ border:2px solid black; padding:25px; width:400px; height:350px;}
+     h1,h2,h3,span,p{border:2px solid blue;padding:6px;}
+     h1{margin-bottom:20px;padding:5px;width:400px;}
+    </style>
+    <script>
+        $(document).ready(function(){
+        
+           //$("h3").siblings().css("border","5px solid red")
+           //$("h3").siblings("p").css("border","5px solid red")
+
+           //$("h3").next().css("border","5px solid red")
+           //$("h3").nextAll().css("border","5px solid red")
+           //$("h2").nextUntil("span").css("border","5px solid red")
+
+           //$("h3").prev().css("border","5px solid red")
+           //$("h3").prevAll().css("border","5px solid red")
+           $("span").prevUntil("p").css("border","5px solid red")
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <h1>jQuery Traversing - Siblings</h1>
+    <!--Tree structure-->
+    <div>Div
+        <h2>h2</h2>
+        <p>p</p>
+        <h3>h3</h3>
+        <span>span</span>
+        <p>p</p>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery Display Event</title>
+    <style>
+        div {
+            display: flex;
+
+        }
+
+        #d1,
+        #d2,
+        #d3 {
+            background-color: red;
+            height: 150px;
+            width: 150px;
+            margin: 15px;
+        }
+
+        button {
+            text-align: center;
+            align-items: center;
+            display: flex;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("#d1").fadeIn();
+                $("#d2").fadeIn();
+                $("#d3").fadeIn();
+            });
+            $("#b2").click(function () {
+                $("#d1").fadeOut();
+                $("#d2").fadeOut();
+                $("#d3").fadeOut();
+            });
+            $("#b3").click(function () {
+                $("#d1").fadeToggle();
+                $("#d2").fadeToggle();
+                $("#d3").fadeToggle();
+            });
+            $("#b4").click(function () {
+                $("#d1").fadeTo("slow",0.34);
+                $("#d2").fadeTo("slow",0.47);
+                $("#d3").fadeTo("slow",0.68);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+    </div>
+
+    <br>
+    <button id="b1">fadeIn</button>
+    <button id="b2">fadeOut</button>
+    <button id="b3">FadeToggle</button>
+    <button id="b4">fadeTo</button>
+</body>
+
+</html>

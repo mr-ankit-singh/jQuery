@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>mouseup/down Event</title>
+    <style>
+        button{
+            margin-left: 200px;
+        }
+        div{
+            background-color: aqua;
+            padding:10px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("div").mouseup(function(){
+                alert("Mouseup event. when you up the mouse click botton on that element")
+            })
+            $("div").mousedown(function(){
+                $("div").css('background' , "green")
+            })
+        });
+    </script>
+</head>
+<body>
+    <button><div>We are learning Mouse Event</div></button>
+</body>
+</html>

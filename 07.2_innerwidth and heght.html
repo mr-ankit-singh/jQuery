@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery innerHeight innerWidth Method</title>
+    <style>
+     img{
+         height:300px;
+         width:500px;
+         margin:70px;
+         border:5px solid red;
+         padding:20px;
+     }
+    </style>
+    <script>
+        $(document).ready(function () {
+          $("button").click(function(){
+              var txt=""
+              txt+="Width: "+$("img").innerWidth()+"</br>";
+              txt+="height: "+$("img").innerHeight()+"</br>";
+              $("div").html(txt)
+          })
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <h1>jQuery innerHeight and innerWidth Method</h1>
+    <div></div>
+    <img src="website.jpg"><br>
+    <button>click</button>
+</body>
+
+</html>

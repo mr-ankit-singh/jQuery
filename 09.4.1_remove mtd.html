@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery remove Element Method</title>
+    <style>
+        
+    </style>
+    <script>
+     $(document).ready(function(){
+         $("#b1").click(function(){
+             //$("#li2").remove()
+             //$("ul").remove()
+             $("ul").remove(".test")          
+         })
+        
+         $("#b2").click(function(){
+            $("p").remove(".demo , .thanku")       
+        })
+     })
+    </script>
+</head>
+
+<body>
+    <h1>JQuery Remove Method</h1>
+    <ul class="test">
+        <li>List 1</li>
+        <li id ="li2">List 2</li>
+        <li>List 3</li>
+    </ul>
+    <div class="test">
+        <button id="b1">Remove List</button>
+        <p class="demo">Welcome</p>
+        <p class="thanku">Thanku</p>
+        
+        <p id="p1">This is First Paragraph</p>
+        <p id ="p2">This is second Paragraph</p>  
+        <p id="p3">This is third paragraph</p>     
+        <button id="b2">Remove Paragraph</button>
+
+    </div>
+</body>
+
+</html>
